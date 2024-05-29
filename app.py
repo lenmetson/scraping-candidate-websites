@@ -21,7 +21,7 @@ data = df[['person_id', 'person_name', 'homepage_url']].dropna()
 data['homepage_url'] = data['homepage_url'].apply(lambda x: unquote(x.strip(' "\'').split('%22')[0]))
 
 # Step 5: Select only the first 5 rows
-data = data.head(5)
+# data = data.head(5)
 
 def standardize_url(url):
     """Standardize URL to ensure uniformity for deduplication."""
