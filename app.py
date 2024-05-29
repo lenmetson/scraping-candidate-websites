@@ -11,16 +11,19 @@ import os
 csv_file_path = 'data/dc-candidates-election_date___ballot_paper_id___election_id_parl2024-07-04__party_id___cancelled___field_group_person-2024-05-29T11-36-57.csv'
 df = pd.read_csv(csv_file_path)
 
-# Step 2: Extract relevant columns and drop rows with missing URLs
+# Step 2: Read the CSV file into a DataFrame
+df = pd.read_csv(csv_file_path)
+
+# Step 3: Extract relevant columns and drop rows with missing URLs
 data = df[['person_id', 'person_name', 'homepage_url']].dropna()
 
-# Step 3: Clean the URLs
+# Step 4: Clean the URLs
 data['homepage_url'] = data['homepage_url'].apply(lambda x: unquote(x.strip(' "\'').split('%22')[0]))
 
-# Step 4: Select only the first 3 rows ( delete this line after the scarapping is successful)
-data = data.head(3)
+# Step 5: Select only the first 5 rows
+data = data.head(5)
 
-# Step 5: Function to extract all internal links from a webpage
+# Step 6: Function to extract all internal links from a webpage
 def extract_internal_links(soup, base_url):
     internal_links = set()
     for link in soup.find_all('a', href=True):
@@ -30,7 +33,7 @@ def extract_internal_links(soup, base_url):
             internal_links.add(url)
     return internal_links
 
-# Step 6: Async function to fetch a webpage content
+# Step 7: Async function to fetch a webpage content
 async def fetch_page(session, url):
     try:
         async with session.get(url) as response:
@@ -38,38 +41,43 @@ async def fetch_page(session, url):
                 print(f"Failed to fetch {url}: 403 Forbidden")
                 return f'Error: 403 Forbidden'
             response.raise_for_status()
-            page_content = await response.text()
+            try:
+                page_content = await response.text()
+            except UnicodeDecodeError:
+                print(f"Failed to decode {url}")
+                return f'Error: Unicode Decode Error'
             return page_content
     except aiohttp.ClientError as e:
         print(f"Failed to fetch {url}: {e}")
         return f'Error: {str(e)}'
 
-# Step 7: Async function to scrape all pages within a website
-async def scrape_website(session, base_url):
+# Step 8: Async function to scrape all pages within a website with depth limiting
+async def scrape_website(session, base_url, max_depth=2):
     visited = set()
-    to_visit = set([base_url])
+    to_visit = {(base_url, 0)}  # Store tuples of (URL, depth)
     content = []
     content_urls = []
 
     while to_visit:
-        url = to_visit.pop()
-        if url not in visited:
+        url, depth = to_visit.pop()
+        if url not in visited and depth <= max_depth:
             visited.add(url)
-            print(f"Fetching: {url}")
+            print(f"Fetching: {url} at depth {depth}")
             page_content = await fetch_page(session, url)
             if not page_content.startswith('Error:'):
                 content.append((url, page_content))
                 content_urls.append(url)
                 soup = BeautifulSoup(page_content, 'html.parser')
-                internal_links = extract_internal_links(soup, base_url)
-                to_visit.update(internal_links - visited)
+                if depth < max_depth:
+                    internal_links = extract_internal_links(soup, base_url)
+                    to_visit.update((link, depth + 1) for link in internal_links if link not in visited)
     
     return content, content_urls
 
-# Step 8: Async function to handle each candidate's website
+# Step 9: Async function to handle each candidate's website
 async def fetch(session, person_id, person_name, homepage_url):
     try:
-        content_list, content_urls = await scrape_website(session, homepage_url)
+        content_list, content_urls = await scrape_website(session, homepage_url, max_depth=2)
         return {
             'person_id': person_id,
             'person_name': person_name,
@@ -87,17 +95,17 @@ async def fetch(session, person_id, person_name, homepage_url):
             'content_urls': []
         }
 
-# Step 9: Async function to create tasks for each row
+# Step 10: Async function to create tasks for each row
 async def scrape_all(rows):
     async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=False)) as session:
         tasks = [fetch(session, row['person_id'], row['person_name'], row['homepage_url']) for _, row in rows.iterrows()]
         return await asyncio.gather(*tasks)
 
-# Step 10: Run the async scraping
+# Step 11: Run the async scraping
 if __name__ == '__main__':
     results = asyncio.run(scrape_all(data))
     
-    # Step 11: Create directories and save content
+    # Step 12: Create directories and save content
     base_dir = Path('scraped_content')
     base_dir.mkdir(exist_ok=True)
     
