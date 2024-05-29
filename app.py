@@ -7,7 +7,8 @@ from bs4 import BeautifulSoup
 # Step 1: Read the CSV file
 csv_file_path = 'data/dc-candidates-election_date___ballot_paper_id___election_id_parl2024-07-04__party_id___cancelled___field_group_person-2024-05-29T11-36-57.csv'
 df = pd.read_csv(csv_file_path)
-``
+
+
 # Step 2: Extract the homepage URLs
 homepage_urls = df['homepage_url'].dropna().tolist()
 
