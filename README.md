@@ -1,4 +1,17 @@
 ## Scraping candidate websites 
+
+### Get started: 
+1. run  `pip3 install -r requirements.txt`
+2. open terminal, and run `python3 app.py`
+3. result will be in `scraped_content` folder 
+
+### File structure
+folder naming: <person_id>_<person_name>  e.g. 4252_Stephen_Kinnock
+
+<img width="807" alt="Screenshot 2024-05-29 at 15 48 09" src="https://github.com/CampaignLab/scraping-candidate-websites/assets/128807685/1ae6df1d-0aa8-402a-9680-807f427f08f2">
+
+----
+## Content copy from the master spreasheet 
 ### Background: 
 We want to create an archive of candidates’ websites over the General Election so we can analyse what issues they focused on, the language, branding, etc that they use.
 ### Challenge: 
