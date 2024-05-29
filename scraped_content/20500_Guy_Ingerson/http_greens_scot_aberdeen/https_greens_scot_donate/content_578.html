@@ -1,0 +1,450 @@
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('html') -->
+<!-- FILE NAME SUGGESTIONS:
+   * html--node--1460.tpl.php
+   * html--node--%.tpl.php
+   * html--node.tpl.php
+   x html.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/pomelo/templates/html.tpl.php' -->
+<!--
+  _____________________________________________________________________________________
+  \____________________________________________________________________________________\
+      ______     ______     ______     ________    ________    __     ______     __  __  
+     /\  ___\   /\  ___\   /\  __ \   /\___  __\  /\___  __\  /\ \   /\  ___\   /\ \_\ \  
+     \ \___  \  \ \ \__/_  \ \ \_\ \  \/__/\ \_/  \/__/\ \_/  \ \ \  \ \___  \  \ \  __ \  
+      \/\_____\  \ \_____\  \ \_____\     \ \_\       \ \_\    \ \_\  \/\_____\  \ \_\ \_\  
+       \/_____/   \/_____/   \/_____/      \/_/        \/_/     \/_/   \/_____/   \/_/\/_/  
+                    ______     ______     ______     ______     _______     ______            
+                   /\  ___\   /\  __ \   /\  ___\   /\  ___\   /\  ___ \   /\  ___\           
+                   \ \ \/_ \  \ \  __<   \ \  __\   \ \  __\   \ \ \_/\ \  \ \___  \            
+                    \ \_____\  \ \_\ \_\  \ \_____\  \ \_____\  \ \_\\ \_\  \/\_____\            
+                     \/_____/   \/_/ /_/   \/_____/   \/_____/   \/_/ \/_/   \/_____/            
+            ___________________________________________________________________________________
+            \___________________________________________________________________________________\
+
+-->
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale = 1.0,maximum-scale = 1.0" />
+  <title>Donate | Scottish Greens - Members Hub</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+(function(vars) {
+            if (window.CRM) CRM.$.extend(true, CRM, vars); else window.CRM = vars;
+            })({"config":{"isFrontend":false,"entityRef":{"contactCreate":false},"wysisygScriptLocation":"/sites/all/modules/civicrm/ext/ckeditor4/js/crm.ckeditor.js","CKEditorCustomConfig":{"default":"https://members.greens.scot/sites/default/files/civicrm/persist/crm-ckeditor-default.js","civimail":"https://members.greens.scot/sites/default/files/civicrm/persist/crm-ckeditor-civimail.js"}},"permissions":[],"resourceUrls":{"civicrm":"/sites/all/modules/civicrm","com.drastikbydesign.stripe":"https://members.greens.scot/sites/default/files/civicrm/ext/com.drastikbydesign.stripe-4.6-dev","org.woolman.genderselfidentify":"https://members.greens.scot/sites/default/files/civicrm/ext/org.woolman.genderselfidentify","nz.co.fuzion.entitysetting":"https://members.greens.scot/sites/default/files/civicrm/ext/nz.co.fuzion.entitysetting","nz.co.fuzion.relatedpermissions":"https://members.greens.scot/sites/default/files/civicrm/ext/nz.co.fuzion.relatedpermissions","org.civicrm.module.cividiscount":"https://members.greens.scot/sites/default/files/civicrm/ext/org.civicrm.module.cividiscount","org.civicrm.smartdebit":"https://members.greens.scot/sites/default/files/civicrm/ext/org.civicrm.smartdebit","uk.co.vedaconsulting.gdpr":"https://members.greens.scot/sites/default/files/civicrm/ext/uk.co.vedaconsulting.gdpr-2.6","org.civicoop.civirules":"https://members.greens.scot/sites/default/files/civicrm/ext/org.civicoop.civirules","mjwshared":"https://members.greens.scot/sites/default/files/civicrm/ext/mjwshared-0.1","uk.co.mjwconsult.optinfields":"https://members.greens.scot/sites/default/files/civicrm/ext/uk.co.mjwconsult.optinfields/optinfields-1.1.1","scot.greens.arealookup":"https://members.greens.scot/sites/default/files/civicrm/ext/scot.greens.arealookup","scot.greens.greenid":"https://members.greens.scot/sites/default/files/civicrm/ext/scot.greens.greenid","scot.greens.sgpmembership":"https://members.greens.scot/sites/default/files/civicrm/ext/scot.greens.sgpmembership","scot.greens.miscellaneous":"https://members.greens.scot/sites/default/files/civicrm/ext/scot.greens.miscellaneous","scot.greens.clustergenerator":"https://members.greens.scot/sites/default/files/civicrm/ext/scot.greens.clustergenerator","contributiontransactlegacy":"https://members.greens.scot/sites/default/files/civicrm/ext/contributiontransactlegacy","org.civicoop.emailapi":"https://members.greens.scot/sites/default/files/civicrm/ext/org.civicoop.emailapi","sequentialcreditnotes":"/sites/all/modules/civicrm/ext/sequentialcreditnotes","eventcart":"/sites/all/modules/civicrm/ext/eventcart","financialacls":"/sites/all/modules/civicrm/ext/financialacls","com.iatspayments.civicrm":"https://members.greens.scot/sites/default/files/civicrm/ext/com.iatspayments.civicrm","greenwich":"/sites/all/modules/civicrm/ext/greenwich","contributioncancelactions":"/sites/all/modules/civicrm/ext/contributioncancelactions","recaptcha":"/sites/all/modules/civicrm/ext/recaptcha","ckeditor4":"/sites/all/modules/civicrm/ext/ckeditor4","firewall":"https://members.greens.scot/sites/default/files/civicrm/ext/firewall","sweetalert":"https://members.greens.scot/sites/default/files/civicrm/ext/sweetalert","minifier":"https://members.greens.scot/sites/default/files/civicrm/ext/minifier","legacycustomsearches":"/sites/all/modules/civicrm/ext/legacycustomsearches","sgp_membership_tags":"https://members.greens.scot/sites/default/files/civicrm/ext/sgp_membership_tags","org.civicrm.contactlayout":"https://members.greens.scot/sites/default/files/civicrm/ext/org.civicrm.contactlayout","org.civicrm.search_kit":"/sites/all/modules/civicrm/ext/search_kit","org.civicrm.flexmailer":"/sites/all/modules/civicrm/ext/flexmailer","authx":"/sites/all/modules/civicrm/ext/authx","org.civicrm.afform":"/sites/all/modules/civicrm/ext/afform/core","org.civicrm.afform_admin":"/sites/all/modules/civicrm/ext/afform/admin","civicrm_admin_ui":"/sites/all/modules/civicrm/ext/civicrm_admin_ui","civi_contribute":"/sites/all/modules/civicrm/ext/civi_contribute","civi_pledge":"/sites/all/modules/civicrm/ext/civi_pledge","civi_member":"/sites/all/modules/civicrm/ext/civi_member","civi_event":"/sites/all/modules/civicrm/ext/civi_event","civi_mail":"/sites/all/modules/civicrm/ext/civi_mail","civi_report":"/sites/all/modules/civicrm/ext/civi_report","civi_campaign":"/sites/all/modules/civicrm/ext/civi_campaign","civiimport":"/sites/all/modules/civicrm/ext/civiimport","cmsuser":"https://members.greens.scot/sites/default/files/civicrm/ext/sgp_forest_cmsuser","civicrm_search_ui":"/sites/all/modules/civicrm/ext/civicrm_search_ui","net.ourpowerbase.sumfields":"https://members.greens.scot/sites/default/files/civicrm/ext/net.ourpowerbase.sumfields","sgp_forest_interface":"https://members.greens.scot/sites/default/files/civicrm/ext/sgp_forest_interface"},"angular":{"modules":["crmResource"],"requires":[],"cacheCode":"xEYzjen_GB","bundleUrl":"https://members.greens.scot/sites/default/files/civicrm/persist/contribute/dyn/angular-modules.66f34d6ccdbea90919fbb173f4d0b949.json"}})
+</script>
+<link rel="shortcut icon" href="https://members.greens.scot/sites/all/themes/pomelo/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="description" content="The Scottish Greens are a people-powered campaign, and your donation will make a huge difference. We&#039;re not funded by big business or anonymous millionaires. Our movement is powered by people like you. So, if you can, please contribute to our campaign today, we rely on people like you. So, if you can, please contribute to our campaign today." />
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
+<link rel="canonical" href="https://members.greens.scot/donate" />
+<link rel="shortlink" href="https://members.greens.scot/node/1460" />
+<meta property="fb:app_id" content="824949924293837" />
+<meta property="og:site_name" content="Scottish Greens - Members Hub" />
+<meta property="og:title" content="Donate" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://members.greens.scot/donate" />
+<meta property="og:description" content="The Scottish Greens are a people-powered campaign, and your donation will make a huge difference. We&#039;re not funded by big business or anonymous millionaires. Our movement is powered by people like you. So, if you can, please contribute to our campaign today, we rely on people like you. So, if you can, please contribute to our campaign today." />
+<meta property="og:updated_time" content="2024-04-25T16:31:15+01:00" />
+<meta property="og:image" content="https://members.greens.scot/sites/default/files/styles/twitter_preview/public/2022WFSDonate.jpg?itok=xZ396S-Z" />
+<meta property="og:image" content="https://members.greens.scot/sites/default/files/styles/twitter_preview/public/Website%20Collage%202.1.png?itok=Gr9lzzeK" />
+<meta property="og:image" content="https://greens.scot/sites/default/files/ScottishGreens_ForPeopleForPlanet.png" />
+<meta property="og:image:url" content="https://members.greens.scot/sites/default/files/styles/twitter_preview/public/2022WFSDonate.jpg?itok=xZ396S-Z" />
+<meta property="og:image:url" content="https://members.greens.scot/sites/default/files/styles/twitter_preview/public/Website%20Collage%202.1.png?itok=Gr9lzzeK" />
+<meta property="og:image:url" content="https://greens.scot/sites/default/files/ScottishGreens_ForPeopleForPlanet.png" />
+<meta property="og:image:secure_url" content="https://members.greens.scot/sites/default/files/styles/twitter_preview/public/2022WFSDonate.jpg?itok=xZ396S-Z" />
+<meta property="og:image:secure_url" content="https://members.greens.scot/sites/default/files/styles/twitter_preview/public/Website%20Collage%202.1.png?itok=Gr9lzzeK" />
+<meta property="og:image:secure_url" content="https://greens.scot/sites/default/files/ScottishGreens_ForPeopleForPlanet.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@scottishgreens" />
+<meta name="twitter:url" content="https://members.greens.scot/donate" />
+<meta name="twitter:title" content="Donate" />
+<meta name="twitter:description" content="The Scottish Greens are a people-powered campaign, and your donation will make a huge difference. We&#039;re not funded by big business or anonymous millionaires. Our movement is powered by people like" />
+<meta name="twitter:image" content="https://members.greens.scot/sites/default/files/styles/twitter_preview/public/2022WFSDonate.jpg?itok=xZ396S-Z" />
+<meta property="article:published_time" content="2019-12-09T22:35:02+00:00" />
+<meta property="article:modified_time" content="2024-04-25T16:31:15+01:00" />
+  <style type="text/css" media="all">
+@import url("https://members.greens.scot/modules/system/system.base.css?se8rm1");
+@import url("https://members.greens.scot/modules/system/system.menus.css?se8rm1");
+@import url("https://members.greens.scot/modules/system/system.messages.css?se8rm1");
+@import url("https://members.greens.scot/modules/system/system.theme.css?se8rm1");
+</style>
+<style type="text/css" media="all">
+@import url("https://members.greens.scot/sites/all/libraries/chosen/chosen.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/modules/chosen/css/chosen-drupal.css?se8rm1");
+</style>
+<style type="text/css" media="all">
+@import url("https://members.greens.scot/modules/book/book.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/modules/calendar/css/calendar_multiday.css?se8rm1");
+@import url("https://members.greens.scot/modules/comment/comment.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/modules/date/date_api/date.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/modules/date/date_repeat_field/date_repeat_field.css?se8rm1");
+@import url("https://members.greens.scot/modules/field/theme/field.css?se8rm1");
+@import url("https://members.greens.scot/modules/node/node.css?se8rm1");
+@import url("https://members.greens.scot/modules/poll/poll.css?se8rm1");
+@import url("https://members.greens.scot/modules/search/search.css?se8rm1");
+@import url("https://members.greens.scot/modules/user/user.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/modules/views/css/views.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/modules/ckeditor/css/ckeditor.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/modules/media/modules/media_wysiwyg/css/media_wysiwyg.base.css?se8rm1");
+</style>
+<style type="text/css" media="all">
+@import url("https://members.greens.scot/sites/all/modules/ctools/css/ctools.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/modules/rate/rate.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/modules/taxonomy_access/taxonomy_access.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/modules/civicrm/css/crm-i.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/modules/civicrm/bower_components/datatables/media/css/jquery.dataTables.min.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/modules/civicrm/bower_components/font-awesome/css/font-awesome.min.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/modules/civicrm/bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/modules/civicrm/bower_components/select2/select2.min.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/modules/civicrm/css/civicrm.css?se8rm1");
+@import url("https://members.greens.scot/sites/default/files/civicrm/ext/sweetalert/css/sweetalert2.min.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/modules/webform/css/webform.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/modules/webform_civicrm/css/webform_civicrm_forms.css?se8rm1");
+</style>
+<style type="text/css" media="all">
+@import url("https://members.greens.scot/sites/all/themes/pomelo/css/layout/layout.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/themes/pomelo/css/base/base.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/themes/pomelo/css/components/components.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/themes/pomelo/css/theme/theme.css?se8rm1");
+@import url("https://members.greens.scot/sites/all/themes/pomelo/fontawesome/css/all.css?se8rm1");
+</style>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://members.greens.scot/misc/jquery-extend-3.4.0.js?v=1.7.2"></script>
+<script type="text/javascript" src="https://members.greens.scot/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.7.2"></script>
+<script type="text/javascript" src="https://members.greens.scot/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://members.greens.scot/misc/drupal.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/libraries/chosen/chosen.jquery.min.js?v=1.1.0"></script>
+<script type="text/javascript" src="https://members.greens.scot/misc/form.js?v=7.82"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/bower_components/jquery/dist/jquery.min.js?se8rm1"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+CRM.config.creditCardTypes = {"Visa":{"label":"Visa","name":"Visa","css_key":"visa","pattern":"4(?:[0-9]{12}|[0-9]{15})"},"MasterCard":{"label":"MasterCard","name":"MasterCard","css_key":"mastercard","pattern":"(5[1-5][0-9]{2}|2[3-6][0-9]{2}|22[3-9][0-9]|222[1-9]|27[0-1][0-9]|2720)[0-9]{12}"},"Amex":{"label":"Amex","name":"Amex","css_key":"amex","pattern":"3[47][0-9]{13}"},"Discover":{"label":"Discover","name":"Discover","css_key":"discover","pattern":"6011[0-9]{12}"}};
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/bower_components/jquery-ui/jquery-ui.min.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/bower_components/lodash-compat/lodash.min.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/packages/jquery/plugins/jquery.mousewheel.min.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/bower_components/select2/select2.min.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/packages/jquery/plugins/jquery.form.min.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/packages/jquery/plugins/jquery.timeentry.min.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/packages/jquery/plugins/jquery.blockUI.min.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/bower_components/datatables/media/js/jquery.dataTables.min.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/bower_components/jquery-validation/dist/jquery.validate.min.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/bower_components/jquery-validation/dist/additional-methods.min.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/packages/jquery/plugins/jquery.ui.datepicker.validation.min.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/js/Common.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/js/crm.datepicker.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/js/crm.ajax.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/js/wysiwyg/crm.wysiwyg.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/default/files/civicrm/persist/contribute/dyn/crm-l10n.bd8c38b20f0b5f0a02e672ec2cd21354.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/bower_components/jquery-ui/ui/i18n/datepicker-en-GB.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/default/files/civicrm/ext/mjwshared-0.1/js/crm.payment.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/default/files/civicrm/ext/sweetalert/js/sweetalert2.min.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/templates/CRM/Core/BillingBlock.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/bower_components/angular/angular.min.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/default/files/civicrm/persist/contribute/dyn/angular-modules.2fa81f801e0da82c57f8a1719b6eef57.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/js/crm-angularjs-loader.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/civicrm/js/noconflict.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/matomo/matomo.js?se8rm1"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _paq = _paq || [];(function(){var u=(("https:" == document.location.protocol) ? "https://matomo.greens.scot/" : "http://matomo.greens.scot/");_paq.push(["setSiteId", "16"]);_paq.push(["setTrackerUrl", u+"piwik.php"]);_paq.push(["setDoNotTrack", 1]);_paq.push(["trackPageView"]);_paq.push(["setIgnoreClasses", ["no-tracking","colorbox"]]);_paq.push(["enableLinkTracking"]);var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.type="text/javascript";g.defer=true;g.async=true;g.src=u+"piwik.js";s.parentNode.insertBefore(g,s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/select_or_other/select_or_other.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/webform/js/webform.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/chosen/chosen.js?v=1.1.0"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/themes/pomelo/js/scripts.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/themes/pomelo/js/jquery.sticky-kit.js.min.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/themes/pomelo/js/jquery.ticker.min.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/themes/pomelo/js/responsive-nav.min.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/themes/pomelo/js/parallax.min.js?se8rm1"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"pomelo","theme_token":"Mvl7S3k0W3Hf_LiJaUcm9RekgLyXMo-90HskRoEZLLM","js":{"\/\/code.jquery.com\/jquery-1.7.2.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/civicrm\/bower_components\/jquery\/dist\/jquery.min.js":1,"1":1,"sites\/all\/modules\/civicrm\/bower_components\/jquery-ui\/jquery-ui.min.js":1,"sites\/all\/modules\/civicrm\/bower_components\/lodash-compat\/lodash.min.js":1,"sites\/all\/modules\/civicrm\/packages\/jquery\/plugins\/jquery.mousewheel.min.js":1,"sites\/all\/modules\/civicrm\/bower_components\/select2\/select2.min.js":1,"sites\/all\/modules\/civicrm\/packages\/jquery\/plugins\/jquery.form.min.js":1,"sites\/all\/modules\/civicrm\/packages\/jquery\/plugins\/jquery.timeentry.min.js":1,"sites\/all\/modules\/civicrm\/packages\/jquery\/plugins\/jquery.blockUI.min.js":1,"sites\/all\/modules\/civicrm\/bower_components\/datatables\/media\/js\/jquery.dataTables.min.js":1,"sites\/all\/modules\/civicrm\/bower_components\/jquery-validation\/dist\/jquery.validate.min.js":1,"sites\/all\/modules\/civicrm\/bower_components\/jquery-validation\/dist\/additional-methods.min.js":1,"sites\/all\/modules\/civicrm\/packages\/jquery\/plugins\/jquery.ui.datepicker.validation.min.js":1,"sites\/all\/modules\/civicrm\/js\/Common.js":1,"sites\/all\/modules\/civicrm\/js\/crm.datepicker.js":1,"sites\/all\/modules\/civicrm\/js\/crm.ajax.js":1,"sites\/all\/modules\/civicrm\/js\/wysiwyg\/crm.wysiwyg.js":1,"sites\/default\/files\/civicrm\/persist\/contribute\/dyn\/crm-l10n.bd8c38b20f0b5f0a02e672ec2cd21354.js":1,"sites\/all\/modules\/civicrm\/bower_components\/jquery-ui\/ui\/i18n\/datepicker-en-GB.js":1,"sites\/default\/files\/civicrm\/ext\/mjwshared-0.1\/js\/crm.payment.js":1,"sites\/default\/files\/civicrm\/ext\/sweetalert\/js\/sweetalert2.min.js":1,"sites\/all\/modules\/civicrm\/templates\/CRM\/Core\/BillingBlock.js":1,"sites\/all\/modules\/civicrm\/bower_components\/angular\/angular.min.js":1,"sites\/default\/files\/civicrm\/persist\/contribute\/dyn\/angular-modules.2fa81f801e0da82c57f8a1719b6eef57.js":1,"sites\/all\/modules\/civicrm\/js\/crm-angularjs-loader.js":1,"sites\/all\/modules\/civicrm\/js\/noconflict.js":1,"sites\/all\/modules\/matomo\/matomo.js":1,"2":1,"sites\/all\/themes\/pomelo\/js\/scripts.js":1,"sites\/all\/themes\/pomelo\/js\/jquery.sticky-kit.js.min.js":1,"sites\/all\/themes\/pomelo\/js\/jquery.ticker.min.js":1,"sites\/all\/themes\/pomelo\/js\/responsive-nav.min.js":1,"sites\/all\/themes\/pomelo\/js\/parallax.min.js":1,"sites\/all\/modules\/webform_civicrm\/js\/webform_civicrm_forms.js":1,"sites\/all\/modules\/webform_civicrm\/js\/webform_civicrm_payment.js":1,"3":1,"sites\/all\/libraries\/chosen\/chosen.jquery.min.js":1,"misc\/form.js":1,"4":1,"5":1,"sites\/all\/modules\/select_or_other\/select_or_other.js":1,"sites\/all\/modules\/webform\/js\/webform.js":1,"sites\/all\/modules\/chosen\/chosen.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/libraries\/chosen\/chosen.css":1,"sites\/all\/modules\/chosen\/css\/chosen-drupal.css":1,"modules\/book\/book.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/poll\/poll.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/media\/modules\/media_wysiwyg\/css\/media_wysiwyg.base.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/rate\/rate.css":1,"sites\/all\/modules\/taxonomy_access\/taxonomy_access.css":1,"sites\/all\/modules\/civicrm\/css\/crm-i.css":1,"sites\/all\/modules\/civicrm\/bower_components\/datatables\/media\/css\/jquery.dataTables.min.css":1,"sites\/all\/modules\/civicrm\/bower_components\/font-awesome\/css\/font-awesome.min.css":1,"sites\/all\/modules\/civicrm\/bower_components\/jquery-ui\/themes\/smoothness\/jquery-ui.min.css":1,"sites\/all\/modules\/civicrm\/bower_components\/select2\/select2.min.css":1,"sites\/all\/modules\/civicrm\/css\/civicrm.css":1,"sites\/default\/files\/civicrm\/ext\/sweetalert\/css\/sweetalert2.min.css":1,"sites\/all\/modules\/webform\/css\/webform.css":1,"sites\/all\/modules\/webform_civicrm\/css\/webform_civicrm_forms.css":1,"sites\/all\/themes\/pomelo\/css\/layout\/layout.css":1,"sites\/all\/themes\/pomelo\/css\/base\/base.css":1,"sites\/all\/themes\/pomelo\/css\/components\/components.css":1,"sites\/all\/themes\/pomelo\/css\/theme\/theme.css":1,"sites\/all\/themes\/pomelo\/fontawesome\/css\/all.css":1}},"matomo":{"trackMailto":1},"webform":{"conditionals":{"webform-client-form-1460":{"ruleGroups":{"rgid_0":{"andor":null,"actions":{"aid_0":{"target":"webform-component--payment-details","invert":1,"action":"show","argument":""},"aid_1":{"target":"webform-component--contact-details","invert":1,"action":"show","argument":""}},"rules":{"rid_0":{"source_type":"component","source":"webform-component--civicrm-1-contribution-1-contribution-total-amount","value":"","callback":"conditionalOperatorStringEmpty"}}}},"sourceMap":{"webform-component--civicrm-1-contribution-1-contribution-total-amount":{"rgid_0":"rgid_0"}},"values":[]}}},"chosen":{"selector":"select:visible, .view-filters select:hidden","minimum_single":1,"minimum_multiple":1,"minimum_width":100,"options":{"allow_single_deselect":false,"disable_search":false,"disable_search_threshold":10,"search_contains":true,"placeholder_text_multiple":"Choose some options","placeholder_text_single":"Choose an option","no_results_text":"No results match","inherit_select_classes":true}},"webform_civicrm":{"defaultCountry":"1226","defaultStates":{"ABE":"Aberdeen City","ABD":"Aberdeenshire","ANS":"Angus","ANN":"Antrim and Newtownabbey","AND":"Ards and North Down","AGB":"Argyll and Bute","ABC":"Armagh City, Banbridge and Craigavon","BDF":"Bedfordshire","BFS":"Belfast","BRK":"Berkshire","BGW":"Gwent","BGE":"Bridgend","BST":"Bristol, City of","BKM":"Buckinghamshire","CAY":"Caerphilly","CAM":"Cambridgeshire","CRF":"Cardiff","CMN":"Carmarthenshire","CCG":"Causeway Coast and Glens","CGN":"Ceredigion","CHS":"Cheshire","CLK":"Clackmannanshire","CWD":"Clwyd","ANT":"Co Antrim","ARM":"Co Armagh","DOW":"Co Down","FER":"Co Fermanagh","DRY":"Co Londonderry","TYR":"Co Tyrone","CWY":"Conwy","CON":"Cornwall","DUR":"County Durham","CMA":"Cumbria","DEN":"Denbighshire","DBY":"Derbyshire","DRS":"Derry City and Strabane","DEV":"Devon","DOR":"Dorset","DGY":"Dumfries and Galloway","DND":"Dundee City","DFD":"Dyfed","EAY":"East Ayrshire","EDU":"East Dunbartonshire","ELN":"East Lothian","ERW":"East Renfrewshire","ERY":"East Riding of Yorkshire","ESX":"East Sussex","EDH":"Edinburgh, City of","ESS":"Essex","FAL":"Falkirk","FMO":"Fermanagh and Omagh","FIF":"Fife","FLN":"Flintshire","GLG":"Glasgow City","GLS":"Gloucestershire","GTM":"Greater Manchester","GWN":"Gwynedd","HAM":"Hampshire","HEF":"Herefordshire","HRT":"Hertfordshire","HED":"Highland","IVC":"Inverclyde","AGY":"Isle of Anglesey","IOW":"Isle of Wight","KEN":"Kent","LAN":"Lancashire","LEC":"Leicestershire","LIN":"Lincolnshire","LBC":"Lisburn and Castlereagh","LON":"London","MSY":"Merseyside","MTY":"Merthyr Tydfil","MEA":"Mid and East Antrim","VGL":"Vale of Glamorgan, The","MUL":"Mid Ulster","MLN":"Midlothian","MON":"Monmouthshire","MRY":"Moray","ELS":"Na h-Eileanan Siar","NTL":"Neath Port Talbot","NWP":"Newport","NMD":"Newry, Mourne and Down","NFK":"Norfolk","NAY":"North Ayrshire","NLK":"North Lanarkshire","NYK":"North Yorkshire","NTH":"Northamptonshire","NBL":"Northumberland","NTT":"Nottinghamshire","OLD":"Oldham","OMH":"Omagh","ORR":"Orkney Islands","OXF":"Oxfordshire","PEM":"Pembrokeshire","PKN":"Perth and Kinross","POW":"Powys","RFW":"Renfrewshire","RCT":"Rhondda, Cynon, Taff","RUT":"Rutland","SCB":"Scottish Borders","ZET":"Shetland Islands","SHR":"Shropshire","SOM":"Somerset","SAY":"South Ayrshire","SGM":"South Glamorgan","SGC":"South Gloucestershire","SLK":"South Lanarkshire","SYK":"South Yorkshire","STS":"Staffordshire","STG":"Stirling","SFK":"Suffolk","SRY":"Surrey","SWA":"Swansea","TOF":"Torfaen","TWR":"Tyne and Wear","WAR":"Warwickshire","WDU":"West Dunbartonshire","WGM":"West Glamorgan","WLN":"West Lothian","WMD":"West Midlands","WSX":"West Sussex","WYK":"West Yorkshire","WIL":"Wiltshire","WOR":"Worcestershire","WRX":"Wrexham"},"noCountry":"- First Choose a Country -","callbackPath":"\/webform-civicrm\/js","processor_id_key":"processor_id","contributionCallback":"\/civicrm\/payment\/form?currency=GBP\u0026snippet=4\u0026is_drupal_webform=1","paymentProcessor":"1"},"urlIsAjaxTrusted":{"\/donate":true}});
+//--><!]]>
+</script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900&display=swap" rel="stylesheet" />
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1460 node-type-payment-page"  data-spy="scroll" data-target="#scrollspynav">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+
+  <a id="jump-up" class="element-invisible"></a>  
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('page') -->
+<!-- FILE NAME SUGGESTIONS:
+   x page--payment-page.tpl.php
+   * page--node--1460.tpl.php
+   * page--node--%.tpl.php
+   * page--node.tpl.php
+   * page.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/pomelo/templates/page--payment-page.tpl.php' -->
+
+
+
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('region') -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--content.tpl.php
+   x region.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/pomelo/templates/region.tpl.php' -->
+	
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('block') -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--system--main.tpl.php
+   * block--system.tpl.php
+   * block--content.tpl.php
+   x block.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/pomelo/templates/block.tpl.php' -->
+<div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('node') -->
+<!-- FILE NAME SUGGESTIONS:
+   * node--1460--full.tpl.php
+   * node--1460.tpl.php
+   * node--payment-page--full.tpl.php
+   x node--payment-page.tpl.php
+   * node.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/pomelo/templates/node--payment-page.tpl.php' -->
+
+<section id="main-split" class="webform-wrapper">
+    <div id="split-left">
+      <div class="content"> 
+
+        <div id="site-logo"></div>
+
+        <h1>Donate</h1>
+
+        <div id="messages">
+                  </div>
+
+        
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('field') -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--body--payment-page.tpl.php
+   * field--payment-page.tpl.php
+   * field--body.tpl.php
+   * field--text-with-summary.tpl.php
+   x field.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/pomelo/templates/field.tpl.php' -->
+
+<div class="field field-name-body field-type-text-with-summary field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><p>The Scottish Greens are a people-powered campaign, and <strong>your donation will make a huge difference.</strong></p>
+<p>We're not funded by big business or anonymous millionaires. Our movement is powered by people like you. So, if you can, please contribute to our campaign today, we rely on people like you. </p>
+<p>So, if you can, please contribute to our campaign today.</p>
+</div>
+      </div>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/pomelo/templates/field.tpl.php' -->
+
+ 
+         
+
+        <div id="main-form">
+          <h2>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('field') -->
+<!-- FILE NAME SUGGESTIONS:
+   * field--field-webform-intro-text--payment-page.tpl.php
+   * field--payment-page.tpl.php
+   x field--field-webform-intro-text.tpl.php
+   * field--text.tpl.php
+   * field.tpl.php
+-->
+<!-- BEGIN OUTPUT from 'sites/all/themes/pomelo/templates/field--field-webform-intro-text.tpl.php' -->
+
+	Donate now
+<!-- END OUTPUT from 'sites/all/themes/pomelo/templates/field--field-webform-intro-text.tpl.php' -->
+
+</h2>
+        <form class="webform-client-form webform-client-form-1460" action="/donate" method="post" id="webform-client-form-1460" accept-charset="UTF-8"><div>
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('webform_form') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/webform/templates/webform-form.tpl.php' -->
+
+
+<!-- THEME DEBUG -->
+<!-- CALL: theme('webform_progressbar') -->
+<!-- BEGIN OUTPUT from 'sites/all/modules/webform/templates/webform-progressbar.tpl.php' -->
+<div class="webform-progressbar">
+  
+
+  
+  </div>
+
+<!-- END OUTPUT from 'sites/all/modules/webform/templates/webform-progressbar.tpl.php' -->
+
+<div  class="form-item webform-component webform-component-select-or-other webform-component--civicrm-1-contribution-1-contribution-total-amount">
+ <div class="select-or-other">
+<div class="form-item form-type-radios form-item-submitted-civicrm-1-contribution-1-contribution-total-amount-select">
+<div id="edit-submitted-civicrm-1-contribution-1-contribution-total-amount-select" class="form-radios civicrm-enabled contribution-line-item select-or-other-select"><div class="form-item form-type-radio form-item-submitted-civicrm-1-contribution-1-contribution-total-amount-select">
+<input required="required" class="civicrm-enabled contribution-line-item select-or-other-select form-radio" data-civicrm-field-key="civicrm_1_contribution_1_contribution_total_amount" type="radio" id="edit-submitted-civicrm-1-contribution-1-contribution-total-amount-select-1" name="submitted[civicrm_1_contribution_1_contribution_total_amount][select]" value="5" />  <label class="option" for="edit-submitted-civicrm-1-contribution-1-contribution-total-amount-select-1">£5 </label>
+
+</div>
+<div class="form-item form-type-radio form-item-submitted-civicrm-1-contribution-1-contribution-total-amount-select">
+<input required="required" class="civicrm-enabled contribution-line-item select-or-other-select form-radio" data-civicrm-field-key="civicrm_1_contribution_1_contribution_total_amount" type="radio" id="edit-submitted-civicrm-1-contribution-1-contribution-total-amount-select-2" name="submitted[civicrm_1_contribution_1_contribution_total_amount][select]" value="10" checked="checked" />  <label class="option" for="edit-submitted-civicrm-1-contribution-1-contribution-total-amount-select-2">£10 </label>
+
+</div>
+<div class="form-item form-type-radio form-item-submitted-civicrm-1-contribution-1-contribution-total-amount-select">
+<input required="required" class="civicrm-enabled contribution-line-item select-or-other-select form-radio" data-civicrm-field-key="civicrm_1_contribution_1_contribution_total_amount" type="radio" id="edit-submitted-civicrm-1-contribution-1-contribution-total-amount-select-3" name="submitted[civicrm_1_contribution_1_contribution_total_amount][select]" value="25" />  <label class="option" for="edit-submitted-civicrm-1-contribution-1-contribution-total-amount-select-3">£25 </label>
+
+</div>
+<div class="form-item form-type-radio form-item-submitted-civicrm-1-contribution-1-contribution-total-amount-select">
+<input required="required" class="civicrm-enabled contribution-line-item select-or-other-select form-radio" data-civicrm-field-key="civicrm_1_contribution_1_contribution_total_amount" type="radio" id="edit-submitted-civicrm-1-contribution-1-contribution-total-amount-select-4" name="submitted[civicrm_1_contribution_1_contribution_total_amount][select]" value="50" />  <label class="option" for="edit-submitted-civicrm-1-contribution-1-contribution-total-amount-select-4">£50 </label>
+
+</div>
+<div class="form-item form-type-radio form-item-submitted-civicrm-1-contribution-1-contribution-total-amount-select">
+<input required="required" class="civicrm-enabled contribution-line-item select-or-other-select form-radio" data-civicrm-field-key="civicrm_1_contribution_1_contribution_total_amount" type="radio" id="edit-submitted-civicrm-1-contribution-1-contribution-total-amount-select-5" name="submitted[civicrm_1_contribution_1_contribution_total_amount][select]" value="select_or_other" />  <label class="option" for="edit-submitted-civicrm-1-contribution-1-contribution-total-amount-select-5">Other </label>
+
+</div>
+</div>
+</div>
+<div class="form-item form-type-textfield form-item-submitted-civicrm-1-contribution-1-contribution-total-amount-other">
+ <label class="element-invisible" for="edit-submitted-civicrm-1-contribution-1-contribution-total-amount-other">Contribution Amount Other </label>
+ <input class="civicrm-enabled contribution-line-item select-or-other-other form-text" data-civicrm-field-key="civicrm_1_contribution_1_contribution_total_amount" type="text" id="edit-submitted-civicrm-1-contribution-1-contribution-total-amount-other" name="submitted[civicrm_1_contribution_1_contribution_total_amount][other]" value="" size="60" maxlength="128" />
+</div>
+
+</div>
+
+</div>
+<div  class="no-display form-item webform-component webform-component-select webform-component--civicrm-1-contribution-1-contribution-campaign-id">
+  <label for="edit-submitted-civicrm-1-contribution-1-contribution-campaign-id">Campaign </label>
+ <select class="civicrm-enabled form-select" data-civicrm-field-key="civicrm_1_contribution_1_contribution_campaign_id" id="edit-submitted-civicrm-1-contribution-1-contribution-campaign-id" name="submitted[civicrm_1_contribution_1_contribution_campaign_id]"><option value="" selected="selected">- None -</option><option value="5">General</option><option value="14">Save Loch Lomond</option><option value="15">Keep Scotland in Europe</option><option value="26">Climate Breakdown</option><option value="27">Green Yes</option><option value="32">Ban Fox Hunting</option><option value="33">Scottish Green New Deal</option><option value="49">2023 Spring Conference</option><option value="50">2023 Autumn Conference</option><option value="52">Upgrade Campaign 2023</option><option value="53">Spring Conference 2024</option><option value="54">Update Sessions</option><option value="56">2024 Research to Win</option><option value="57">2024 General Election</option></select>
+</div>
+<fieldset class="webform-component-fieldset webform-component--payment-details form-wrapper"><legend><span class="fieldset-legend">Payment Details</span></legend><div class="fieldset-wrapper"><table id="wf-crm-billing-items">
+<caption>Donate to the Scottish Greens</caption>
+<tbody>
+ <tr id="wf-crm-billing-total" data-amount="0" class="odd"><td>Total</td><td>£ 0.00</td> </tr>
+</tbody>
+</table>
+<div  class="form-item webform-component webform-component-hidden webform-component--payment-details--civicrm-1-contribution-1-contribution-contribution-page-id" style="display: none">
+ <input class="civicrm-enabled" data-civicrm-field-key="civicrm_1_contribution_1_contribution_contribution_page_id" type="hidden" name="submitted[payment_details][civicrm_1_contribution_1_contribution_contribution_page_id]" value="1" />
+
+</div>
+<div class="crm-container crm-public" id="billing-payment-block"></div></div></fieldset>
+<fieldset class="webform-component-fieldset webform-component--contact-details form-wrapper"><legend><span class="fieldset-legend">Contact Details</span></legend><div class="fieldset-wrapper"><div  class="form-item webform-component webform-component-textfield webform-component--contact-details--civicrm-1-contact-1-contact-first-name">
+  <label for="edit-submitted-contact-details-civicrm-1-contact-1-contact-first-name">First Name <span class="form-required" title="This field is required.">*</span></label>
+ <input required="required" class="civicrm-enabled form-text required" data-civicrm-field-key="civicrm_1_contact_1_contact_first_name" type="text" id="edit-submitted-contact-details-civicrm-1-contact-1-contact-first-name" name="submitted[contact_details][civicrm_1_contact_1_contact_first_name]" value="" size="20" maxlength="128" />
+</div>
+<div  class="form-item webform-component webform-component-textfield webform-component--contact-details--civicrm-1-contact-1-contact-last-name">
+  <label for="edit-submitted-contact-details-civicrm-1-contact-1-contact-last-name">Last Name <span class="form-required" title="This field is required.">*</span></label>
+ <input required="required" class="civicrm-enabled form-text required" data-civicrm-field-key="civicrm_1_contact_1_contact_last_name" type="text" id="edit-submitted-contact-details-civicrm-1-contact-1-contact-last-name" name="submitted[contact_details][civicrm_1_contact_1_contact_last_name]" value="" size="20" maxlength="128" />
+</div>
+<div  class="form-item webform-component webform-component-textfield webform-component--contact-details--civicrm-1-contact-1-address-street-address">
+  <label for="edit-submitted-contact-details-civicrm-1-contact-1-address-street-address">Street Address <span class="form-required" title="This field is required.">*</span></label>
+ <input required="required" class="civicrm-enabled form-text required" data-civicrm-field-key="civicrm_1_contact_1_address_street_address" type="text" id="edit-submitted-contact-details-civicrm-1-contact-1-address-street-address" name="submitted[contact_details][civicrm_1_contact_1_address_street_address]" value="" size="40" maxlength="128" />
+</div>
+<div  class="form-item webform-component webform-component-textfield webform-component--contact-details--civicrm-1-contact-1-address-city">
+  <label for="edit-submitted-contact-details-civicrm-1-contact-1-address-city">City <span class="form-required" title="This field is required.">*</span></label>
+ <input required="required" class="civicrm-enabled form-text required" data-civicrm-field-key="civicrm_1_contact_1_address_city" type="text" id="edit-submitted-contact-details-civicrm-1-contact-1-address-city" name="submitted[contact_details][civicrm_1_contact_1_address_city]" value="" size="20" maxlength="128" />
+</div>
+<div  class="form-item webform-component webform-component-textfield webform-component--contact-details--civicrm-1-contact-1-address-postal-code">
+  <label for="edit-submitted-contact-details-civicrm-1-contact-1-address-postal-code">Postal Code <span class="form-required" title="This field is required.">*</span></label>
+ <input required="required" class="civicrm-enabled form-text required" data-civicrm-field-key="civicrm_1_contact_1_address_postal_code" type="text" id="edit-submitted-contact-details-civicrm-1-contact-1-address-postal-code" name="submitted[contact_details][civicrm_1_contact_1_address_postal_code]" value="" size="7" maxlength="128" />
+</div>
+<div  class="form-item webform-component webform-component-email webform-component--contact-details--civicrm-1-contact-1-email-email">
+  <label for="edit-submitted-contact-details-civicrm-1-contact-1-email-email">Email <span class="form-required" title="This field is required.">*</span></label>
+ <input required="required" class="email civicrm-enabled form-text form-email required" data-civicrm-field-key="civicrm_1_contact_1_email_email" type="email" id="edit-submitted-contact-details-civicrm-1-contact-1-email-email" name="submitted[contact_details][civicrm_1_contact_1_email_email]" size="20" />
+</div>
+<div  class="form-item webform-component webform-component-checkboxes webform-component--contact-details--civicrm-1-contact-1-other-tag">
+  <label class="element-invisible" for="edit-submitted-contact-details-civicrm-1-contact-1-other-tag">Email List Opt In </label>
+ <div id="edit-submitted-contact-details-civicrm-1-contact-1-other-tag" class="form-checkboxes civicrm-enabled"><div class="form-item form-type-checkbox form-item-submitted-contact-details-civicrm-1-contact-1-other-tag-59">
+<input class="civicrm-enabled form-checkbox" data-civicrm-field-key="civicrm_1_contact_1_other_tag" type="checkbox" id="edit-submitted-contact-details-civicrm-1-contact-1-other-tag-1" name="submitted[contact_details][civicrm_1_contact_1_other_tag][59]" value="59" />  <label class="option" for="edit-submitted-contact-details-civicrm-1-contact-1-other-tag-1">Yes, keep me informed of Scottish Greens campaigns and events via email </label>
+
+</div>
+</div>
+ <div class="description">We will never share your details with third parties. You can find out more about how we use your information in our <a target="_blank" href="https://greens.scot/privacy">privacy policy</a>.</div>
+</div>
+</div></fieldset>
+<input type="hidden" name="details[sid]" />
+<input type="hidden" name="details[page_num]" value="1" />
+<input type="hidden" name="details[page_count]" value="1" />
+<input type="hidden" name="details[finished]" value="0" />
+<input type="hidden" name="form_build_id" value="form-TQb1NG9NSt0QjHNHhcnp-tkqqs2ejMZ_15p-OBYNPnk" />
+<input type="hidden" name="form_id" value="webform_client_form_1460" />
+<div class="form-actions"><input class="webform-submit button-primary form-submit" type="submit" name="op" value="Donate" /></div>
+<!-- END OUTPUT from 'sites/all/modules/webform/templates/webform-form.tpl.php' -->
+
+</div></form> 
+        </div>
+
+      </div>
+    </div>
+    <div id="split-right"> 
+        <div id="split-bg" style="background-image: url(https://members.greens.scot/sites/default/files/styles/tall/public/Website%20Collage%202.1.png?itok=etvjYoSk)"></div>
+    </div>
+</section>
+
+<!-- END OUTPUT from 'sites/all/themes/pomelo/templates/node--payment-page.tpl.php' -->
+
+  </div>
+</div>
+
+<!-- END OUTPUT from 'sites/all/themes/pomelo/templates/block.tpl.php' -->
+
+
+<!-- END OUTPUT from 'sites/all/themes/pomelo/templates/region.tpl.php' -->
+
+ 
+
+<script type="text/javascript">
+
+	jQuery.urlParam = function(name){
+	  var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+	  if (results == null) return null;
+	  else return results[1] || 0;
+	}
+
+	jQuery( document ).ready(function() {
+		if (jQuery.urlParam('amount') !== null) {
+			jQuery("input[data-civicrm-field-key=civicrm_1_contribution_1_contribution_total_amount][value=" + jQuery.urlParam('amount') + "]").attr('checked', 'checked');
+		}
+	});
+
+</script>
+<!-- END OUTPUT from 'sites/all/themes/pomelo/templates/page--payment-page.tpl.php' -->
+
+  <script type="text/javascript" src="https://members.greens.scot/sites/all/modules/webform_civicrm/js/webform_civicrm_forms.js?se8rm1"></script>
+<script type="text/javascript" src="https://members.greens.scot/sites/all/modules/webform_civicrm/js/webform_civicrm_payment.js?se8rm1"></script>
+<a id="jump-down" class="element-invisible"></a>  
+</body>
+</html>
+
+<!-- END OUTPUT from 'sites/all/themes/pomelo/templates/html.tpl.php' -->
+
