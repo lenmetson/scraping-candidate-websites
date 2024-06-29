@@ -1,7 +1,11 @@
 myenv
 
+data/*
+
 # Ignore scraped content apart from examples
 scraping-candidate-websites/scraped_content/*
 !scraping-candidate-websites/scraped_content/20500_Guy_Ingerson
 !scraping-candidate-websites/scraped_content/21097_Lynn_Thomson
 !scraping-candidate-websites/scraped_content/34215_David_Duguid
+
+*.csv
